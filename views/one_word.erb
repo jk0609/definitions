@@ -1,13 +1,14 @@
 <h1><%= @one_word.name %></h1>
 
 <% if @one_word.img!="" %>
-  <img src="<%= @one_word.img %>" class='word_picture'>
+  <img src="<%= @one_word.img %>" class='word_picture' alt='Sorry this picture cannot be found.'>
 <% end %>
 
+
+<h3>Definitions:</h3>
+<ol>
 <% (@one_word.def).each() do |definition| %>
-  <div class="def_block">
-    <p>Definition: <%= definition.text %></p>
-  </div>
+  <li>  <div class="def_block"><%= definition.text %></div></li>
 <% end %>
-
+</ol>
 <a href="/<%= @one_word.id %>/new_def" class='btn btn-success'>Create a new definition!</a>

@@ -7,6 +7,9 @@ h1{
   font-weight: bold;
   font-family: monospace;
 }
+li>a, h3, li{
+  color: yellow;
+}
 p, label{
   color: yellow;
   font-size: 18px;
@@ -18,9 +21,9 @@ input{
 }
 .definition{
   height: 80px;
-  padding-top: 0px;
+  padding-bottom: 50px;
 }
 .word_picture{
-  height: 150px;
+  height:50px;
   border-radius: 10px;
 }
