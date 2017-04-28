@@ -1,6 +1,6 @@
 <h1><%= @one_word.name %></h1>
 
-<% if @one_word.img %>
+<% if @one_word.img!="" %>
   <img src="<%= @one_word.img %>" class='word_picture'>
 <% end %>
 

@@ -18,6 +18,7 @@ input{
 }
 .definition{
   height: 80px;
+  padding-top: 0px;
 }
 .word_picture{
   height: 150px;

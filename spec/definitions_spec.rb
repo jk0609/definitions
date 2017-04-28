@@ -70,4 +70,20 @@ describe('Definition') do
       expect(test_def.id).to(eq(1))
     end
   end
+
+  describe('.all') do
+    it('Returns the @@all_defs class variable, an array of all definition objects') do
+      test_def = Definition.new({})
+      test_def2 = Definition.new({})
+      expect(Definition.all).to(eq([test_def,test_def2]))
+    end
+  end
+
+  describe('.clear') do
+    it('Empties the @@all_defs class variable array') do
+      test_def = Definition.new({})
+      test_def2 = Definition.new({})
+      expect(Definition.clear).to(eq([]))
+    end
+  end
 end
