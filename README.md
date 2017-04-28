@@ -11,6 +11,7 @@ Exercise in Ruby and Sinatra using class variables to act as a primitive databas
 Navigate to the downloaded project directory in your Ruby terminal and run $ bundle install to add all the necessary gems. Run $ ruby app.rb to start the Sinatra gem, then navigate to localhost:4567 in your browser of choice to play with the app.
 
 Alternatively, visit the live version of the app at:
+https://shrouded-cove-30717.herokuapp.com/1
 
 ## Technologies Used
 
