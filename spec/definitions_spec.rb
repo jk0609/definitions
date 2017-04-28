@@ -10,7 +10,7 @@ describe('Word') do
     it('Creates a new Word object based on provided attributes') do
       test_word = Word.new({
         :name => 'Test',
-        :img => "",
+        :img => ""
         })
       expect(test_word.name).to(eq('Test'))
       expect(test_word.img).to(eq(''))
@@ -23,7 +23,7 @@ describe('Word') do
     it('Adds Definition objects to the @def array for Word objects') do
       test_word = Word.new({
         :name => 'Test',
-        :img => "",
+        :img => ""
         })
       test_def = Definition.new({:text => 'testtest'})
       test_word.add_def(test_def)
@@ -44,6 +44,14 @@ describe('Word') do
       test_word = Word.new({})
       test_word2 = Word.new({})
       expect(Word.clear).to(eq([]))
+    end
+  end
+
+  describe('.find') do
+    it('Searches through the @@all_words array for a Word object with a matching id to the passed arg') do
+      test_word = Word.new({})
+      test_word2 = Word.new({})
+      expect(Word.find(2)).to(eq(test_word2))
     end
   end
 end

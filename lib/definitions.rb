@@ -18,6 +18,15 @@ class Word
   define_method(:add_def) do |new_def|
     @def.push(new_def)
   end
+  define_singleton_method(:find) do |id|
+    found_word = nil
+    @@all_words.each() do |word|
+      if word.id() == id
+        found_word = word
+      end
+    end
+    found_word
+  end
 end
 
 class Definition

@@ -1,4 +1,9 @@
 <h1>Choose your word!</h1>
 
+<ul>
+<% @words.each() do |word| %>
+  <li><a href='/<%= word.id %>'><%= word.name %></a></li>
+<% end %>
+</ul>
 
 <a href="/new_word" class='btn btn-success'>Create a new word!</a>
