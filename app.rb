@@ -44,3 +44,8 @@ get('/:id/new_def') do
   @one_word = Word.find(params[:id].to_i)
   erb(:new_def)
 end
+
+get('/clear') do
+  Word.clear
+  erb(:clear)
+end
