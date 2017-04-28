@@ -1,14 +1,18 @@
 <h1>Create a new word!</h1>
 
 <form action="/" method="post">
-  <label for="word">Word</label>
-  <input type="text" name="word">
+  <div class="form-group">
+    <label for="word">Word</label><br>
+    <input type="text" name="word" required>
+  </div>
+  <div class="form-group">
+    <label for="def">Definition</label><br>
+    <input type="text" name="def" class='definition' required>
+  </div>
+  <div class="form-group">
+    <label for="img">Link a picture that's on the internet!</label><br>
+    <input type="text" name="img">
+  </div>
 
-  <label for="def">Definition</label>
-  <input type="text" name="def">
-
-  <label for="img">Link a picture that's on the internet!</label>
-  <input type="text" name="img">
-
-  <button type="submit" name="submit">Add Word</button>
+  <button type="submit" class='btn btn-info' name="submit">Add Word</button>
 </form>

@@ -1,3 +1,25 @@
+.wrapper{
+  background: teal;
+}
+h1{
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: monospace;
+}
+p, label{
+  color: yellow;
+  font-size: 18px;
+}
+input{
+  background: lightgrey;
+  border-radius: 5px;
+  width: 300px;
+}
+.definition{
+  height: 80px;
+}
 .word_picture{
   height: 150px;
+  border-radius: 10px;
 }

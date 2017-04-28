@@ -1,8 +1,10 @@
 <h1>Create a new definition for your word!</h1>
 
 <form action="/<%= @one_word.id %>" method="post">
-  <label for="def">Definition</label>
-  <input type="text" name="def">
+  <div class="form-group">
+    <label for="def">Definition</label><br>
+    <input type="text" name="def" class='definition' required>
+  </div>
 
-  <button type="submit" name="submit">Add Definition</button>
+  <button type="submit" class='btn btn-info' name="submit">Add Definition</button>
 </form>
